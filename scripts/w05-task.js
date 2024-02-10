@@ -49,7 +49,7 @@ const reset = () => {
 const sortBy = (temples) => {
     reset();
   
-    const filter = document.querySelector('#sortBy').value;
+    const filter = document.querySelector('#filtered').value;
   
     switch (filter) {
         case 'utah':
@@ -75,6 +75,6 @@ const sortBy = (temples) => {
 
 
 /* Event Listener */
-document.querySelector('#sortBy').addEventListener('change', () => {sortBy(templeList);});
+document.querySelector('#filtered').addEventListener('change', () => {sortBy(templeList);});
 
 getTemples();
