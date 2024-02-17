@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Workout Log</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Workout Logging App</h1>
+  </header>
+
+  <div class="container">
+    <form id="workoutForm">
+      <label for="workInput">Workout:</label>
+      <input type="text" id="workInput" required>
+
+      <label for="time">Time (minutes):</label>
+      <input type="number" id="time" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Add Workout</button>
+    </form>
+
+    <ul id="workoutList"></ul>
+
+    <div id="statsContainer">
+      <h2>Statistics</h2>
+      <div id="totalTime">Total Time: 0 minutes</div>
+      <div id="averageTime">Average Time: 0 minutes</div>
+      <div id="longestTime">Longest Time: None</div>
+      <div id="shortestTime">Shortest Time: None</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy;<span id="year"></span> | Andrew Jones | Week 6 - Final Project
+</footer>
+<script src="scripts/main.js"></script>
+</body>
+
+</html>
